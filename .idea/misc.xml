@@ -4,7 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Cleyson/AndroidStudioProjects/Simulador/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1975" />
-        <entry key="..\:/Users/Cleyson/AndroidStudioProjects/Simulador/app/src/main/res/layout/activity_main.xml" value="0.1661600810536981" />
+        <entry key="..\:/Users/Cleyson/AndroidStudioProjects/Simulador/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1695" />
+        <entry key="..\:/Users/Cleyson/AndroidStudioProjects/Simulador/app/src/main/res/drawable/ic_simulate.xml" value="0.1695" />
+        <entry key="..\:/Users/Cleyson/AndroidStudioProjects/Simulador/app/src/main/res/layout/activity_detail.xml" value="0.25" />
+        <entry key="..\:/Users/Cleyson/AndroidStudioProjects/Simulador/app/src/main/res/layout/activity_detail2.xml" value="0.17391304347826086" />
+        <entry key="..\:/Users/Cleyson/AndroidStudioProjects/Simulador/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Cleyson/AndroidStudioProjects/Simulador/app/src/main/res/layout/match_item.xml" value="0.25" />
       </map>
     </option>
   </component>

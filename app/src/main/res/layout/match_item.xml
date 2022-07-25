@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_default">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivHomeTeam"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_default"
+            android:contentDescription="@string/cd_simulate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvAwayTeam"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="ImageContrastCheck,RedundantDescriptionCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvHomeTeamName"
+            android:layout_width="87dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="@dimen/margin_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivHomeTeam"
+            app:layout_constraintStart_toStartOf="@+id/ivHomeTeam"
+            app:layout_constraintTop_toBottomOf="@+id/ivHomeTeam"
+            tools:text="Home Team" />
+
+        <TextView
+            android:id="@+id/tvHomeTeamScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/ivHomeTeam"
+            app:layout_constraintEnd_toStartOf="@+id/tvVersus"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toEndOf="@+id/ivHomeTeam"
+            app:layout_constraintTop_toTopOf="@+id/ivHomeTeam"
+            app:layout_constraintVertical_bias="0.466"
+            tools:text="99" />
+
+        <TextView
+            android:id="@+id/tvVersus"
+            android:layout_width="27dp"
+            android:layout_height="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/ivHomeTeam"
+            app:layout_constraintEnd_toStartOf="@+id/tvAwayTeam"
+            app:layout_constraintStart_toEndOf="@+id/ivHomeTeam"
+            app:layout_constraintTop_toTopOf="@+id/ivHomeTeam"
+            app:layout_constraintVertical_bias="0.468"
+            tools:text="@string/txt_versus" />
+
+        <ImageView
+            android:id="@+id/tvAwayTeam"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:contentDescription="@string/cd_away_team"
+            app:layout_constraintBottom_toTopOf="@+id/tvAwayTeamName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.275"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvAwayTeamName"
+            android:layout_width="59dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvAwayTeam"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/tvAwayTeam"
+            tools:text="Away Team" />
+
+        <TextView
+            android:id="@+id/tvAwayTeamScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAwayTeam"
+            app:layout_constraintEnd_toStartOf="@+id/tvAwayTeam"
+            app:layout_constraintHorizontal_bias="0.941"
+            app:layout_constraintStart_toEndOf="@+id/tvVersus"
+            app:layout_constraintTop_toTopOf="@+id/tvAwayTeam"
+            app:layout_constraintVertical_bias="0.466"
+            tools:text="99" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
